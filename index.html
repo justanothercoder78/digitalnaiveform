@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Booking Form</title>
+</head>
+<body>
+
+<div class="form-container">
+<form id="roundedrectangle" class="form" action="submit.php" method="post">
+    <label for="name">Name: </label>
+    <input alt="Enter the name in here" type="text" placeholder= "John Doe" id="name" name="name" pattern=".*\s.* [A-Za-z0-9 !#$%&amp;'*+\/=@?^_`{|}~]+" minlength="5" maxlength="50" required>
+    <br>
+    <label for="email">Email: </label>
+    <input alt="Enter the email address in here" type="email" placeholder="johndoe@mail.com" name="email" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" minlength="6" required>
+    <br>
+    <label for="cardnumber">Card: </label>
+    <input alt="Enter the card number in here" type="text" placeholder="xxxxxxxxxxxxxxxx" id="cardNumber" name="cardNumber" pattern="[0-9]{13,16}" title="Please enter a valid card number (13-16 digits)." required>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+</div>
+
+</body>
